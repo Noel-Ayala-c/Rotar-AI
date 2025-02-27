@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400&display=swap'); /* Google */
+@import url('https://fonts.googleapis.com/css2?family=Federo&display=swap'); /* FedEx */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400&display=swap'); /* Microsoft */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap'); /* Spotify */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap'); /* McAfee */
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: rgb(243, 243, 243);
+}
+/* ENCABEZADO PRINCIPAL */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: rgb(243, 243, 243);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.logo img {
+    width: 25px;
+    margin-right: 8px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: gray;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.login:hover {
+    color: gray;
+}
+
+.demo {
+    text-decoration: none;
+    background-color: #00FF7F;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.demo:hover {
+    background-color: #00cc66;
+}
+
+/* SECCIÓN HERO */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.hero-text {
+    max-width: 50%;
+    margin-bottom: 5px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    font-weight: normal;
+    margin-bottom: 10px; /* Ajusta el margen inferior */
+    position: relative;
+    top: -100px; /* Mueve el h1 hacia arriba */
+}
+
+.highlight {
+    background-color:rgba(187,251,220,255);
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px;
+}
+
+.highlighted-text img {
+    vertical-align: middle; /* Alinea la imagen con el texto */
+    height: 1em; /* Ajusta la altura de la imagen según el tamaño del texto */
+}
+
+
+
+.toggle-switch {
+    width: 50px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 25px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.switch {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+}
+
+.hero-text p {
+    margin-top: -80px; /* Reduce el margen superior */
+    line-height: 1.4; /* Ajusta la altura de línea para mejorar legibilidad */
+}
+
+.hero-image {
+    position: relative;
+    max-width: 50%;
+    left: 30px;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* Contenedor padre para agrupar hero e info */
+.content-wrapper {
+    background-color: white; /* Fondo blanco */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    max-width: 95%; /* Ancho máximo */
+    margin: 10px auto; /* Centrar en la pantalla */
+    padding: 10px; /* Espaciado interno */
+
+}
+
+.icon{
+    width: 5px;
+    height: 5px;
+
+}
+
+.badge {
+    position: absolute;
+    top: 10px;
+    background: white;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 14px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot {
+    left: 25px;
+    display: flex; /* Alinea el icono y el texto en línea */
+    align-items: center; /* Centra verticalmente */
+    gap: 5px; /* Espacio entre el icono y el texto */
+}
+
+.chatbot .material-symbols-outlined {
+    font-size: 20px; /* Ajusta el tamaño del icono */
+    vertical-align: middle; /* Asegura que se alinee bien */
+}
+
+.gpt4 {
+    left: 120px;
+    display: flex; /* Alinear icono y texto en línea */
+    align-items: center; /* Centrar verticalmente */
+    gap: 5px; /* Espacio entre icono y texto */
+}
+
+.gpt4 .material-symbols-outlined {
+    font-size: 20px; /* Tamaño del icono */
+    vertical-align: middle; /* Asegurar alineación */
+}
+
+
+.watch-tutorial {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #00FF7F;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.info {
+    margin-top: -120px; /* Reduce espacio con el párrafo */
+
+}
+
+.guide-card {
+    position: relative; /* Hace que el texto se posicione dentro del contenedor */
+    width: 800px; /* Ajusta el tamaño del contenedor */
+    height: 250px; /* Mantiene la proporción */
+    background-image: url(/img/objeto-ciencia.png);
+    bottom: 20px;
+    left: 40px;
+    border-radius: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.guide-text {
+    position: absolute;
+    top: 40px; /* Mueve el texto hacia abajo */
+    left: 20px; /* Mueve el texto hacia la derecha */
+    color: black; /* Asegura visibilidad sobre la imagen */
+    padding: 15px;
+    width: 90%; /* Ajusta el tamaño del texto */
+}
+
+.guide-text h3{
+    margin: 5px 0; /* Espaciado entre elementos */
+    font-size: 25px;
+}
+.guide-text p{
+    margin: 15px 0;
+    font-size: 15px;
+    color: dimgrey;
+}
+
+.guide-text a {
+    color: #000000; /* Color del enlace */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+.stat-card{
+    background-color:#b9fbce;
+    border-radius: 40px;
+    margin: 20px 0 0 0;
+    padding: 20px;
+    width: 350px;
+    height: 150px;
+}
+.stat-card h2{
+    font-size: 50px;
+}
+
+.stats-card{
+    background-image: url(/img/rainbow-vortex.svg);
+    background-size: cover;
+    border-radius: 40px;
+    margin: 20px;
+    padding: 20px;
+    width: 350px;
+    height: 150px;
+}
+
+.stats-card p{
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+.fa-star{
+    color: white;
+    margin: 8px;
+}
+
+.stats {
+    position: absolute;
+    right: 45px;
+    bottom: 160px;
+    display: flex;
+}
+
+.auspiciadores {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 250px;
+    margin: 50px 0;
+    padding: 30px;
+}
+
+.auspiciadores p {
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: dimgrey; 
+}
+
+.auspiciadores p:nth-child(0) { font-family: 'Roboto', sans-serif; } /* Spotify */
+.auspiciadores p:nth-child(1) { font-family: 'Segoe UI', sans-serif; } /* Microsoft */
+.auspiciadores p:nth-child(2) { font-family: 'Montserrat', sans-serif; } /* McAfee */
+.auspiciadores p:nth-child(3) { font-family: 'Google Sans', sans-serif; } /* Google */
+.auspiciadores p:nth-child(4) { font-family: 'Federo', sans-serif; } /* FedEx */
+
+.auspiciadores i {
+    font-size: 40px; /* Ajustar tamaño de los íconos */
+}
+
+.auspiciadores img {
+    width: 40px; /* Tamaño del logo de McAfee */
+    height: auto;
+}
+
+/*--------------------------------------------------------------------------*/
+
+.card-png {
+    position: relative;
+    width: 750px;
+    height: 400px;
+    background-image: url(/img/subtle-prism.svg);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    bottom: 20px;
+    left: 40px;
+    top: 20px;
+    border-radius: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-text {
+
+    position: absolute;
+    top: 300px;
+    left: 20px;
+    color: black;
+    padding: 15px;
+    width: 90%;
+}
+.content {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    max-width: 95%;
+    margin: 10px auto;
+    padding: 10px;
+    height: 900px;
+}
+.content h1 {
+    font-size: 4rem;
+    font-weight: normal;
+    margin-bottom: -20px;
+    position: relative;
+    top: -80px;
+}
+
+.notion {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.meet {
+    position: absolute;
+    top: 90px;
+    left: 50px;
+}
+
+.evernote {
+    position: absolute;
+    top: 30px;
+    left: 400px;
+}
+
+.teams {
+    position: absolute;
+    top: 150px;
+    left: 550px;
+}
+.card-png h3{
+    font-size: 25px;
+}
+
+.chat-ia {
+    border-radius: 40px;
+    width: 300px;
+    height: 450px;
+    position: relative;
+}
+
+.chat-ia img {
+    position: absolute;
+    width: 100%; /* Ajusta el tamaño */
+}
+
+.chat-ia img:nth-child(1) {
+    top: 20px;
+    left: -380px;
+}
+
+.chat-ia img:nth-child(2) {
+    top: 20px;
+    left: -50px;
+}
+
+.comunicacion {
+    background-color: #0f0f0f;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    position: absolute;
+    overflow: hidden;
+    top: 500px; /* Ajusta la distancia desde arriba */
+    right: 377px ; /* Ajusta la distancia desde la izquierda */
+}
+
+.comunicacion h2 {
+    color: white;
+    padding: 20px;
+}
+
+.comunicacion p {
+    color: white;
+    padding: 0 20px;
+}
+
+.comunicacion img {
+    width: 70px;
+    position: absolute;
+}
+
+/* Posiciones personalizadas para cada imagen */
+.comunicacion img:nth-child(3) { /* wathsapp */
+    top: 140px;
+    left: 30px;
+}
+
+.comunicacion img:nth-child(4) { /* obnitrix */
+    top: 170px;
+    left: 125px;
+}
+
+.comunicacion img:nth-child(5) { /* ig */
+    bottom: 80px;
+    right: 20px;
+}
+
+.comunicacion img:nth-child(6) { /* mesenger */
+    top: 220px;
+    right: 170px;
+}
+
+.comunicacion img:nth-child(7) { /* X */
+    bottom: 10px;
+    left: 180px;
+}
+
+.porcentaje{
+    width: 100%;
+    position: absolute;
+    top: 380px;
+    right: 50px;
+}
