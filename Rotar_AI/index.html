@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rotar AI</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <script src="https://kit.fontawesome.com/c6a92522a5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_outward" />
+  </head>
+  <body>
+      <header>
+        <div class="contenedor-navegacion"> 
+          <div class="bloque">
+            <a href="#" class="logo-navegacion">
+              <img src="img/logo.png" alt="logo" class="logo">
+              <p>Rotar AI</p>
+            </a>
+          </div>
+          <nav class="nav-principal">
+            <ul>
+              <li><a href="#" data-i18n="product">Product</a></li>
+              <li><a href="#" data-i18n="solutions">Solutions</a></li>
+              <li><a href="#" data-i18n="resources">Resources</a></li>
+              <li><a href="#" data-i18n="pricing">Pricing</a></li>
+          </ul>
+          </nav clase="bloque">
+          <div class="button-navegacion">
+            <button class="button-cps" data-i18n="login">Login</button>
+            <button class="btn button-select" id="language-btn" onclick="changeLanguage()">
+                <span id="btn-text" data-i18n="bookDemo">Translation</span>
+                <span class="material-symbols-outlined">arrow_outward</span>
+            </button>
+        </div>
+          <div class="checkdiv">
+            <label for="check" class="checkbtn">
+              <i class="fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" id="checkbox">
+          </div>
+        </div>
+      </header>
+    <main>
+      <div class="ultimate-inicio">
+        <div class="flex-container">
+          <!-- Contenedor 1-->
+          <div class="titulo-ultimate container parrafo">
+            <div class="div-ultimate">
+                <h2 data-aos="fade-right" data-aos-duration="1500" data-i18n="ultimateTitle">The Ultimate AI Customer Service Companion
+                    <div class="onmitrix-logo">
+                        <div class="border-buttom black">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <div class="border-buttom white-1"></div>
+                        <div class="border-buttom white-2"></div>
+                    </div>
+                </h2>
+            </div>
+            <p data-aos="fade-right" data-aos-duration="1500" data-i18n="ultimateDescription">
+                Embrace AI chatbot technology in a GPT-4-supported communication tool to help your customers, empower your team, and reduce your workload.
+            </p>
+        </div>
+            <!--Puse el titulo-ultimate para que el lado izquierdo estuviera unido-->
+            <div data-aos="fade-up" data-aos-duration="1500" class="guide-container">
+              <div class="subtitulo-guide">
+                  <h3 data-i18n="guideTitle">Guide: The Rotar AI Tutorial Hand Book</h3>
+                  <p data-i18n="guideDescription">Everything you need to know about the first steps in chatbots.</p>
+                  <a href="#" data-i18n="readArticle">Read Article
+                      <i class="fa-solid fa-arrow-right-long"></i>
+                  </a>
+              </div>
+          </div>
+        </div>
+        <div class="container-margen">
+          <div data-aos="fade-left" data-aos-duration="1500" class="position-container">
+              <div class="clase">
+                  <div class="button-float">
+                      <button class="button-button posicion">Chatbot</button>
+                      <button class="button-button posicion">Chat GPT 4</button>
+                  </div>
+              </div>
+              <div class="button-tutorial">
+                <button class="contenido-button button-color" data-i18n="watchTutorial">
+                  Watch Tutorial <i class="fa-solid fa-play fa-beat"></i>
+              </button>
+              
+              </div>
+          </div>
+  
+          <div class="container-height-flex">
+              <div data-aos="fade-up" data-aos-duration="1500" class="color-verde-500">
+                  <div class="margen-500">
+                      <h3>+ 500</h3>
+                      <p data-i18n="companies">Big companies use Rotar AI for their services</p>
+                  </div>
+              </div>
+              <div data-aos="fade-up-left" data-aos-duration="1500" class="color-negro-500">
+                  <div class="margen-two-500">
+                      <div class="image-500">
+                          <img src="img/Estrella.png" alt="">
+                          <img src="img/Estrella.png" alt="">
+                          <img src="img/Estrella.png" alt="">
+                      </div>
+                      <div class="margen-subtitulo-500">
+                          <h4 data-i18n="aiDriven">AI-driven customer services</h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+      </div>
+      </div>
+
+    </main>
+
+    <section class="auspiciadores">
+      <p data-aos="flip-left" data-aos-duration="2000"><i class="fa-brands fa-spotify"></i>Spotify</p>
+      <p data-aos="flip-right" data-aos-duration="2000"><i class="fa-brands fa-microsoft"></i>Microsoft</p>
+      <p data-aos="flip-left" data-aos-duration="2000"><img src="/img/icons8-mcafee.svg" alt="">McAfee</p>
+      <p data-aos="flip-right" data-aos-duration="2000" id="Google">Google</p>
+      <p data-aos="flip-left" data-aos-duration="2000" class="fedex">FedEx</p>    
+    </section>
+  <!-- Contenido Deliver-->
+    <div class="container-deliver">
+      <div class="container-flex-deliver">
+        <div class="flex-separacion container parrafo">
+          <div class="text-deliver">
+            <div class="text-deliver">
+              <h2 data-aos="zoom-in" data-aos-duration="2000" data-i18n="deliverTitle">Deliver a high-quality customer experience
+              <div class="onmitrix-logo-two">
+                <div class="border-buttom white">
+                  <img src="img/flecha.png" alt="">
+                </div>
+                <div class="border-buttom white-1"></div>
+                <div class="border-buttom white-2"></div>
+              </div>
+              </h2>
+            </div>
+            <p data-aos="zoom-in" data-aos-duration="2000" data-i18n="deliverDescription">
+              Embrace AI chatbot technology in a GPT-4-supported communication
+              tool to help your customers, empower your team, and reduce your
+              workload.
+            </p>
+          </div>
+          <div data-aos="zoom-in-right" data-aos-duration="2000" class="text-deliver-h5 parrafo">
+            <div class="logo-deliver">
+                <div class="logo-notion">
+                  <img src="img/notion.png" alt="">
+                </div>
+                <div class="logo-meet">
+                  <img src="img/meet.png" alt="">
+                </div>             
+                <div class="logo-evernote">
+                  <img src="img/evernote.png" alt="">
+                </div>
+                <div class="logo-teams">
+                  <img src="img/teams.png" alt="">
+                </div>   
+            </div>
+            <h5 data-i18n="workflowTitle">Automate your workflow with our integrations</h5>
+            <p data-i18n="workflowDescription">
+              Connect Rotar AI with your customer service, sales, marketing, and recruitment tools using our user-friendly API, webhooks, or Zapier integration.
+            </p>
+          </div>
+        </div>
+        <div class="container-grid">
+          <div class="container-flex-block">
+            <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" class="container-white-flex">
+              <div class="seccion1-deliver-flex">
+                <div>
+                  <div class="imagen-deliver">
+                    <img src="img/perfil.png" alt="">
+                    <h5>Jame Kokolomel</h5>
+                  </div>
+
+                  <p data-i18n="forgotPassword">I've forgotten my password</p>
+                </div>
+              </div>
+              <div class="seccion2-deliver-flex">
+                <div>
+                  <div class="logo-flex">
+                    <div class="logo-nav">
+                      <img src="img/logo.png" alt="">
+                    </div>
+                    <h5>Rotar Robot</h5>
+                  </div>
+
+                  <p data-i18n="resetInstructions">
+                    No worries, we've all been in a melancholy situation like that. To reset your password, go to the login page and click on Forgot Password? Then, enter the email address and follow it.
+                </p>
+                
+                </div>
+              </div>
+
+              <div class="container-boost-h6">
+              <h6 data-i18n="boostTitle">Boost conversations 96% with AI</h6>
+              <p data-i18n="boostDescription">Our AI-powered chatbots and automation tools are here to help.</p>
+              </div>
+            </div>
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="container-centralize-bg">
+              <h5 data-i18n="centralizeTitle">Centralize Your communication</h5>
+              <p data-i18n="centralizeDescription">Easily respond to chats from all of your channels in one overview.</p>
+              <div class="logos-grid">
+                <div class="logo-fondo-two">
+                  <div class="logo-whatsapp">
+                    <img src="img/WhatsApp_icon.png" alt="">
+                  </div>
+                  <div class="logo-messenger">
+                    <img src="img/messenger.png" alt="">
+                  </div>
+                </div>
+                <div class="logo-fondo centro">
+                  <img src="img/logo.png" alt="">
+                </div>
+                <div class="logo-fondo-two">
+                  <div class="logo-instagram">
+                    <img src="img/instagram-2.png" alt="">
+                  </div>
+                  <div class="logo-twitter centro">
+                    <img src="img/twitter.png" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container-flex-block">
+            <div data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500" class="container-always-flex">
+              <h5 data-i18n="liveChatTitle">Always accessible with our live chat.</h5>
+              <p data-i18n="liveChatDescription">Enhance Communication with Real-Time Live Chat.</p>
+              <div class="comentario-flex">
+                <div class="comentario-div">
+                  <div class="flex-div">
+                    <div class="imagen-deliver">
+                      <img src="img/perfil.png" alt="">
+                    </div>
+                    <div class="gris-1"></div>
+                  </div>
+                  <div class="gris-2"></div>
+                </div>
+                <div class="comentario-div">
+                  <div class="flex-div">
+                    <div class="imagen-deliver">
+                      <img src="img/perfil2.png" alt="">
+                    </div>
+                    <div class="gris-1"></div>
+                  </div>
+                  <div class="gris-2"></div>
+                </div>           
+              </div>
+            </div>
+            <!-- Contenido Circle-->
+            <div data-aos="fade-up"
+            data-aos-duration="3000" class="container-circle">
+              <div class="circle-width">
+                <div class="porcentajes" style="--porcentaje: 12.5; --color: forestgreen">
+                  <svg width="240" height="240">
+                    <circle r="100" cx="50%" cy="50%" pathlength="100" />
+                    <circle r="100" cx="50%" cy="50%" pathlength="100" />
+                  </svg>
+                  <div class="texto-porcentaje">
+                    <h3>12,5%</h3>
+                    <p data-i18n="conversationEmployee">CONVERSATION EMPLOYEE</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container-gain">
+                <h5 data-i18n="insightsTitle">Gain valuable insights from your audience</h5>
+                <p data-i18n="insightsDescription">
+                Statistics provide valuable insights into how customers interact with Rotar AI.
+                </p>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <main>
+        <aside class="aside-throughout">
+          <p data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine" data-i18n="customerJourney">
+            Throughout your customer's entire buying journey, Rotar AI allows you to delight them at every step of the way, from their first visit to the final purchase.
+        </p>
+        
+        <button data-aos="flip-right" data-aos-duration="1500">
+          <span data-i18n="getStarted">Get started</span>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF">
+              <path d="m256-240-56-56 384-384H240v-80h480v480h-80v-344L256-240Z"/>
+          </svg>
+      </button>
+      
+        </aside>
+      <div class="container-throughout">
+        <div class="bloque-vacio">
+        </div>
+          <div data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="1500"
+          data-aos-duration="1500" class="subtitulo-margen container">
+            <h2>
+              <span data-i18n="redefineTitle">Redefining Conversations and Enhancing User Experience</span>
+              <div class="onmitrix-logo-tree">
+                  <div class="border-buttom-one white-3">
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                          <path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/>
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+                          <path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/>
+                      </svg>
+                  </div>
+                  <div class="border-buttom-one white-4"></div>
+                  <div class="border-buttom white-5"></div>
+              </div>
+          </h2>
+          
+          </div>
+        <div class="gri-blocks">
+          <article class="article-button">
+            <div data-aos="zoom-in-right" data-aos-duration="1000" class="article-blocks paddding-blocks container-gain-two">
+              <h3 data-i18n="engageTitle">Engage</h3>
+                <p data-i18n="engageDescription">
+                Reach out to visitors proactively using personalized chatbot greetings. Turn website visits into sales opportunities.
+                    </p>
+
+            </div>
+            <div data-aos="zoom-in-right" data-aos-duration="1000" class="article-blocks-two paddding-blocks container-gain-two">
+              <h3 data-i18n="nurtureTitle">Nurture</h3>
+              <p data-i18n="nurtureDescription">
+              Lead customers to a sale through recommended purchases and tailored offerings.</p>
+            </div>
+            <div data-aos="zoom-in-right" data-aos-duration="1000" class="article-blocks-two paddding-blocks container-gain-two">
+              <h3 data-i18n="qualifyTitle">Qualify</h3>
+              <p data-i18n="qualifyDescription">
+                Generate and qualify prospects automatically. Transfer high-intent leads to your sales reps in real time to
+                shorten the sales cycle.
+              </p>
+            </div>
+          </article>
+          <article>
+            <div class="rotar"></div>
+            <div data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000" class="rotar-card">
+              <div class="rotar-flex">
+                <div class="logo-flex">
+                  <div class="logo-nav">
+                    <img src="img/logo.png" alt="">
+                  </div>
+                  <div class="rotar-robot">
+                    <h3>Rotar Robot</h3>
+                    <p>Online</p>                    
+                  </div>
+                </div>
+              </div>
+              <div class="rotar-parrafo">
+                <div class="texto-flex">
+                  <div class="logo-nav-gris">
+                    <img src="img/logo-gris.png" alt="">
+                  </div>
+                  <h4>Rotar Robot</h4>
+                </div>
+
+                <p data-i18n="passwordHelp">
+                  No worries, we've all been in a melancholy situation like that. To reset your password, go to the login page and click on Forgot Password? Then, enter the email address and follow it.
+              </p>
+              </div>
+              <div class="button-verde">
+                <button class="bordes" data-i18n="solutions">Solutions</button>
+                <button class="bordes" data-i18n="services">Services</button>
+                <button class="bordes" data-i18n="bookCall">Book a Call</button>
+                <button class="bordes" data-i18n="complain">Complain</button>
+              </div>
+              <div class="total-iconos">
+                <div class="input-centrar">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#999999"><path d="M620-520q25 0 42.5-17.5T680-580q0-25-17.5-42.5T620-640q-25 0-42.5 17.5T560-580q0 25 17.5 42.5T620-520Zm-280 0q25 0 42.5-17.5T400-580q0-25-17.5-42.5T340-640q-25 0-42.5 17.5T280-580q0 25 17.5 42.5T340-520Zm140 260q68 0 123.5-38.5T684-400h-66q-22 37-58.5 58.5T480-320q-43 0-79.5-21.5T342-400h-66q25 63 80.5 101.5T480-260Zm0 180q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-400Zm0 320q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Z"/></svg>
+                  <input type="text" placeholder="Type Here">
+                </div>
+                <img src="img/link.png" alt="">
+              </div>
+            </div>
+
+          </article>
+        </div>
+      </div>
+    </main>
+    <div class="site-templates">
+      <div class="container-templates-h2 container">
+        <div>
+          <h2 data-aos="zoom-in-right" data-aos-duration="1000" data-i18n="useTemplates">Use <span>templates</span> to get started your project</h2>
+        </div>
+        <div class="templates-flex-button">
+          <button data-aos="fade-down-right" data-aos-duration="1000" class="templates-button" data-i18n="ecommerce">E-commerce</button>
+          <button data-aos="fade-down" data-aos-duration="1000" class="templates-button" data-i18n="education">Education</button>
+          <button data-aos="fade-left" data-aos-duration="1000" class="templates-button" data-i18n="healthcare">Health Care</button>
+          <button data-aos="fade-up-right" data-aos-duration="1000" class="templates-button" data-i18n="financial">Financial</button>
+          <button data-aos="fade-up" data-aos-duration="1000" class="templates-button" data-i18n="hr">HR</button>
+          <button data-aos="fade-up-left" data-aos-duration="1000" class="templates-button" data-i18n="tourism">Tourism</button>
+        </div>
+      </div>
+      <!-- Inicio - Cards-->
+      <div data-aos="flip-right" data-aos-duration="1000" class="container-cards">
+          <div>
+            <div class="imagen-template">
+              <div class="template-cards-p">
+                <p data-i18n="helpText">Great! Happy to help find the right plan for you. What are you looking to do with Rotar AI?</p>
+              </div>
+              <div class="template-cards-p-two">
+                <p data-i18n="customerGoal">Get more customers on my website page</p>
+              </div>
+            </div>
+            <div class="chatbot-template">
+              <h4 data-i18n="chatbotMarketing">Chatbot for Marketing</h4>
+              <p data-i18n="chatbotDescription">Provide recommendations and process transactions in a chat.</p>
+              <button class="template-try" data-i18n="tryTemplate">Try template for free</button>
+            </div>
+          </div>
+        <!-- Fin - Cards-->
+        
+        <!-- Inicio - Cards-->
+          <div data-aos="flip-right" data-aos-duration="1000">
+            <div class="imagen-template-two">
+              <div  class="template-cards-p">
+                <p data-i18n="interviewMessage">You have qualified for the next round of interviews, Alvarez! Please let me know your availability.</p>
+
+              </div>
+              <div class="template-cards-p-two">
+                <p data-i18n="availabilityResponse">Any time between 2 to 5 PM tomorrow.</p>
+              </div>
+            </div>
+            <div class="chatbot-template">
+              <h4 data-i18n="chatbotHrTitle">Chatbot for HR</h4>
+              <p data-i18n="chatbotHrDescription">Find talent and interact with candidates in an innovative way.</p>
+              <button class="template-try" data-i18n="tryTemplate">Try template for free</button>
+            </div>
+        </div>
+        <!-- Fin - Cards-->
+        
+        <!-- Inicio - Cards-->
+          <div data-aos="flip-right" data-aos-duration="1000">
+            <div class="imagen-template-tree">
+              <div class="template-cards-p">
+                <p data-i18n="helpText">Great! Happy to help find the right plan for you. What are you looking to do with Rotar AI?</p>
+              </div>
+              <div class="template-cards-p-two">
+                <p data-i18n="customerGoal">Get more customers on my website page</p>
+              </div>
+            </div>
+            <div class="chatbot-template">
+              <h4 data-i18n="chatbotMarketing">Chatbot for Marketing</h4>
+              <p data-i18n="chatbotDescription">Provide recommendations and process transactions in a chat.</p>
+              <button class="template-try" data-i18n="tryTemplate">Try template for free</button>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!--
+    <section>
+      <div class="top-container">
+        <p>Join the growing number of businesses and companies that have experience the transformative impact of our chatbot services.</p>
+      </div>  
+      <div class="container-top ">
+        <div>
+          <div class="container-what-top container">
+            <div class="container-what-top-flex">
+              <div>
+              <h2>What top-tier companies tell about our product</h2>                  
+              </div>
+          
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="clip-path-messi">
+        <img src="" alt="">
+        <h5>Mbida Messi</h5>
+        <p>Founder ERC Music Market Store</p>
+      </div>
+      <div>
+        <div>
+          <button>Client Testimonial</button>
+          <h3>I was amazed byt the level of assistance I received from the AL Chatbot provided by ROTAR AI. It quickly understood my questions nd provided accurate and helpful responses.</h3>
+        </div>
+        <div>
+          <button>1/4</button>
+          <button>See more testimoni</button>
+        </div>
+      </div>
+    </section>
+    -->
+
+  <!-- Contenido take-->
+    <div data-aos="zoom-in" data-aos-duration="1000" class="container-take container">
+      <div class="container-take-your">
+        <h2 data-i18n="productivityTitle">Take control of your productivity with a GPT-4 chatbot now</h2>
+        <div class="flex-take-control">
+          <p data-i18n="transformService">Transform your Customer Service with Rotar's AI and GPT-4 Powered Chatbot Solution. Try it free now.</p>
+          <button class="button-take-class template-try-take-black" data-i18n="bookDemo">
+            Book a Demo <span class="material-symbols-outlined">arrow_outward</span>
+        </button>
+          </button>
+          <button class="button-take-uno template-try-take-white">Contact Us<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg></button>
+        </div>
+
+      </div>
+    </div>
+  <!-- Footer -->
+  <footer data-aos="zoom-in-right" data-aos-duration="1000" class="site-footer">
+    <div class="footer-grid">
+      <div class="footer-flex">
+        <div>
+          <h3 data-i18n="company">Company</h3>
+          <nav class="footer-menu">
+            <a href="#" data-i18n="about">About Rotar AI</a>
+            <a href="#" data-i18n="pricing">Pricing</a>
+            <a href="#" data-i18n="demo">Demo</a>
+
+          </nav>
+        </div>
+        <div>
+          <h3 data-i18n="resources">Resources</h3>
+          <nav class="footer-menu">
+              <a href="#" data-i18n="blog">Blog</a>
+              <a href="#" data-i18n="events">Events</a>
+              <a href="#" data-i18n="toolLibrary">Tool Library</a>
+          </nav>
+
+        </div>
+        <div>
+          <h3 data-i18n="legal">Legal</h3>
+          <nav class="footer-menu">
+              <a href="#" data-i18n="termsOfUse">Terms of Use</a>
+              <a href="#" data-i18n="privacyPolicy">Privacy Policy</a>
+          </nav>
+
+        </div>        
+      </div>
+
+
+      <div class="footer-menu-ai">
+        <h2 data-i18n="rotarAI">Rotar AI</h2>
+        <p data-i18n="aboutRotarAI">
+            We are at the forefront of AI chatbot development, revolutionizing the way businesses engage with their customers.
+        </p>
+    </div>
+          
+    </div>
+  <!-- contenido -->
+    <div class="linea"></div>
+    <div class="footer-button">
+        <button class="button-white">Instagram</button>
+        <button class="button-white">Linkedin</button>
+        <button class="button-white">Twitter</button>
+        <button class="button-white">Github</button>
+        <div>
+          <button class="button-lange">
+            <img src="img/logo-gris.png" alt="logo">
+            <span data-i18n="footerRights">Rotar AI. All Rights Reserved</span>
+        </button>                  
+        </div>
+
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+      AOS.init();
+  </script>  
+  <script src="js/script.js"></script>
+  </body>
+</html>
